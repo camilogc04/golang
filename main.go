@@ -7,5 +7,7 @@ import (
 
 func main() {
 	fmt.Println("Hello world!")
-	variables.MostrarEnteros()
+	estado, nombre := variables.ConviertoATexto(1543)
+	fmt.Println(estado)
+	fmt.Println(nombre)
 }
