@@ -18,7 +18,7 @@ func Ejercicio02() string {
 	if scanner.Scan() {
 		n, err = strconv.Atoi(scanner.Text())
 		if err != nil {
-			panic("Dato incorrecto" + err.Error())
+			return "Dato incorrecto ☹️"
 		}
 		for i := 1; i < 11; i++ {
 			texto += fmt.Sprintln(n, "x", i, "=", n*i)
