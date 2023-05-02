@@ -9,7 +9,10 @@ import (
 	/*"RampUpFolder/devPath/cursogo/golang/files"*/
 	//"RampUpFolder/devPath/cursogo/golang/funciones"
 	//"RampUpFolder/devPath/cursogo/golang/arreglos_slices"
-	"RampUpFolder/devPath/cursogo/golang/mapas"
+	//"RampUpFolder/devPath/cursogo/golang/mapas"
+	//"RampUpFolder/devPath/cursogo/golang/usuarios"
+	e "RampUpFolder/devPath/cursogo/golang/ejer_interfaces"
+	m "RampUpFolder/devPath/cursogo/golang/modelos"
 )
 
 func main() {
@@ -40,5 +43,11 @@ func main() {
 	//arreglos_slices.MostrarArreglos()
 	//arreglos_slices.MostrarSlices()
 	//arreglos_slices.Capacidad()
-	mapas.MostrarMapas()
+	//mapas.MostrarMapas()
+	//usuarios.AltaUsuario()
+	Pedro := new(m.Hombre)
+	e.HumanoRespirando(Pedro)
+
+	Maria := new(m.Mujer)
+	e.HumanoRespirando(Maria)
 }
