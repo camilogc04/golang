@@ -11,8 +11,11 @@ import (
 	//"RampUpFolder/devPath/cursogo/golang/arreglos_slices"
 	//"RampUpFolder/devPath/cursogo/golang/mapas"
 	//"RampUpFolder/devPath/cursogo/golang/usuarios"
-	e "RampUpFolder/devPath/cursogo/golang/ejer_interfaces"
-	m "RampUpFolder/devPath/cursogo/golang/modelos"
+	/*e "RampUpFolder/devPath/cursogo/golang/ejer_interfaces"
+	m "RampUpFolder/devPath/cursogo/golang/modelos"*/
+	//df "RampUpFolder/devPath/cursogo/golang/defer_panic"
+	//"RampUpFolder/devPath/cursogo/golang/gorutines"
+	"RampUpFolder/devPath/cursogo/golang/webserver"
 )
 
 func main() {
@@ -45,9 +48,17 @@ func main() {
 	//arreglos_slices.Capacidad()
 	//mapas.MostrarMapas()
 	//usuarios.AltaUsuario()
-	Pedro := new(m.Hombre)
+
+	/*Pedro := new(m.Hombre)
 	e.HumanoRespirando(Pedro)
 
 	Maria := new(m.Mujer)
-	e.HumanoRespirando(Maria)
+	e.HumanoRespirando(Maria)*/
+
+	//df.VemosDefer()
+	/*canal1 := make(chan bool)
+	go gorutines.MiNombreLento("CAMILO", canal1) // Llamada asincrina gracias al prefijo go
+	<-canal1                                     // Esto es un canal que hasta que no retorne un valor, no termina la ejecucion.
+	*/
+	webserver.MiServidorWeb()
 }
